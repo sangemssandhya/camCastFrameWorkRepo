@@ -16,6 +16,8 @@ public class HomePage {
 	private WebElement OrganizationsTab;
 	@FindBy(xpath="//a[text()='Contacts' and contains (@href,'Contacts&action')]")
 	private WebElement ContactsTab;
+	@FindBy(linkText="Products")
+	private WebElement ProductTab;
 	
 	@FindBy(id="qccombo")
 	private WebElement quickCreateDropdown;
@@ -69,6 +71,14 @@ public class HomePage {
 
 	public void setAdminIcon(WebElement adminIcon) {
 		this.adminIcon = adminIcon;
+	}
+
+	public WebElement getProductTab() {
+		return ProductTab;
+	}
+
+	public void setProductTab(WebElement productTab) {
+		ProductTab = productTab;
 	}
 	
 
