@@ -8,13 +8,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import comcastCrm.generic.fileUtility.ExcelUtility;
 import comcastCrm.generic.fileUtility.Fileutility;
 import comcastCrm.generic.fileUtility.JavaUtility;
 
-public class CreateContactWithDates {
-	public static void main(String[] args) throws IOException, Throwable {
+public class CreateContactWithDatesTest {
+	
+	@Test
+	public  void Anything() throws IOException, Throwable {
 		
 	Fileutility fiu=new Fileutility();
 	ExcelUtility eiu=new ExcelUtility();

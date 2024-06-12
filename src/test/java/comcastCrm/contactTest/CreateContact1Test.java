@@ -1,6 +1,5 @@
 package comcastCrm.contactTest;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -8,14 +7,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import comcastCrm.generic.fileUtility.ExcelUtility;
 import comcastCrm.generic.fileUtility.Fileutility;
 import comcastCrm.generic.fileUtility.JavaUtility;
 
-public class CreateContact {
-
-	public static void main(String[] args) throws Throwable {
+public class CreateContact1Test{
+    @Test
+	public  void  Nothing ()throws Throwable {
 		// TODO Auto-generated method stub
 		Fileutility fiu=new Fileutility();
 		ExcelUtility eiu=new ExcelUtility();
